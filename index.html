@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bingo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="controls">
+  <button id="btnNeu" class="btn btn-neu">Neu</button>
+  <button id="btnZiehen" class="btn btn-ziehen">Zahl ziehen</button>
+  <button id="btnAbbruch" class="btn btn-abbruch">Abbruch</button>
+</header>
+
+<main class="content">
+
+  <section class="draw-display" id="drawDisplay">
+    <div class="letter" id="currentLetter"></div>
+    <div class="number" id="currentNumber"></div>
+  </section>
+
+  <aside class="board">
+    <div class="board-row" data-letter="B">
+      <span class="board-letter letter-B">B</span>
+      <div class="board-numbers" id="row-B"></div>
+    </div>
+    <div class="board-row" data-letter="I">
+      <span class="board-letter letter-I">I</span>
+      <div class="board-numbers" id="row-I"></div>
+    </div>
+    <div class="board-row" data-letter="N">
+      <span class="board-letter letter-N">N</span>
+      <div class="board-numbers" id="row-N"></div>
+    </div>
+    <div class="board-row" data-letter="G">
+      <span class="board-letter letter-G">G</span>
+      <div class="board-numbers" id="row-G"></div>
+    </div>
+    <div class="board-row" data-letter="O">
+      <span class="board-letter letter-O">O</span>
+      <div class="board-numbers" id="row-O"></div>
+    </div>
+
+    <div class="board-info">
+      <div class="info-line">Zuletzt gezogen: <span id="lastDrawn">–</span></div>
+      <div class="info-line">Gezogene Zahlen: <span id="drawnCount">0</span> / 75</div>
+    </div>
+  </aside>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
